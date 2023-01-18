@@ -46,10 +46,346 @@
 		
 		<section>
 		<div class="content">
-		<h3 id="available-datasets">Available Datasets</h3>
+		<h3 id="available-products">Available Products</h3>
 <p> The Canadian Meteorological Centre(CMC) is a part of Environment and Climate Change Canada and is
- responsible for producing and disseminating a number of numerical weather and hydrological prediction products. </p>
+ responsible for producing and disseminating a number of numerical weather and hydrological prediction products. A number of these products are summarized below. </p>
 
+<p><strong>What products are available?</strong></p>
+<details>
+<summary>Hydrologic Prediction </summary>
+<br>
+<p> <i> Summary Table </i> </p>
+</details>
+
+<details>
+<summary>Atmosphere </summary>
+<br>
+<p> <i> Summary Table </i> </p>
+</details>
+
+<details>
+<summary> Other </summary>
+<br>
+<p> <i> Summary Table </i> </p>
+</details>
+
+<h3 id="product-summary-table">Product Summary Table</h3>
+<table>
+<thead>
+<tr>
+<th>Category</th>
+<th>Sub Category</th>
+<th>Product</th>
+<th>Highlights</th>
+<th>Spatial Coverage</th>
+<th>Spatial Resolution</th>
+<th>Temporal Resolution</th>
+<th>Data Access</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Hydrologic Prediction</td>
+<td>Comprehensive System</td>
+<td><a href="./../products/NSRPS/nsrps-3.1.0"> National Surface and River Prediction System (NSRPS)</td>
+<td>Network of  independent modelling systems. Precipitation, evaporation, surface runoff, lateral subsurface flow and drainage. Includes: DHPS, EHPS, SHOP. (see flow chart)</td>
+<td>Varies with system</td>
+<td>Varies with system</td>
+<td>Varies with system</td>
+<td>Varies with system</td>
+</tr>
+<tr>
+<td>Hydrologic Prediction</td>
+<td>Sub-System</td>
+<td><a href="./../products/DHPS/DHPS-3.1.0"> Deterministic Hydrologic Prediction System (DHPS), <a href="https://collaboration.cmc.ec.gc.ca/cmc/CMOI/product_guide/docs/tech_notes/technote_dhps-310_20211130_e.pdf">Tech doc</a></td>
+<td>1D streamflow, lake levels</td>
+<td>6 major Canadian river basins and large water bodies, expanding in 2023 (see map)</td>
+<td>1km</td>
+<td>Frequency: 00 and 12Z, 6 day forecast, Hourly Output</td>
+<td>Experimental, secured access. Coming to MSC Open Data, Spring 2023</td>
+</tr>
+<tr>
+<td>Hydrologic Prediction</td>
+<td>Sub-System</td>
+<td>Ensemble Hydrological Prediction System (EHPS), <a href="https://collaboration.cmc.ec.gc.ca/cmc/CMOI/product_guide/docs/tech_notes/technote_ehps_e.pdf">Tech doc</a></td>
+<td>1D Rivers, 20 members</td>
+<td>Great Lakes, St Lawrence, Nelson and Churchill, expanding in 2023 (see map)</td>
+<td>1km</td>
+<td>Frequency (??), 16/32 day</td>
+<td>Experimental, secured access. Coming to MSC Open Data, Spring 2023</td>
+</tr>
+<tr>
+<td>Hydrologic Prediction</td>
+<td>Sub-System</td>
+<td>Simulation Hydrodynamique OPérationnelle (SHOP), <a href="https://collaboration.cmc.ec.gc.ca/cmc/CMOI/product_guide/docs/tech_notes/technote_shop_e.pdf">Tech doc</a></td>
+<td>Water level and velocity. (many other variables??) One member</td>
+<td>St. Lawrence</td>
+<td>(??)</td>
+<td>Frequency 6h, 48h forecast, 6h analysis</td>
+<td>n/a</td>
+</tr>
+<tr>
+<td>Hydrologic Prediction</td>
+<td>Land Surface</td>
+<td><a href="./../products/HRDLPS/HRDLPS-2.0"> High Resolution Deterministic Prediction System (HRDLPS), <a href="https://collaboration.cmc.ec.gc.ca/cmc/CMOI/product_guide/docs/tech_notes/technote_shop_e.pdf">Tech doc</a></td>
+<td>Surface, near surface, input fields for hydro systems. Forecasts of soil moisture, snow, temp, humidity, wind</td>
+<td>Canada</td>
+<td>2.5km</td>
+<td>Frequency: 00 and 12Z, Medium Range, 3-6 day (??)</td>
+<td>(??)</td>
+</tr>
+<tr>
+<td>Hydrologic Prediction</td>
+<td>(??)</td>
+<td><a href="https://eccc-msc.github.io/open-data/msc-data/nwp_wcps/readme_wcps_en/">Water Cycle Prediction System (WCPS)</a>, <a href="https://collaboration.cmc.ec.gc.ca/cmc/CMOI/product_guide/docs/tech_notes/technote_wcps_e.pdf">Tech doc</a></td>
+<td>Atmosphere-ocean-ice, river flows</td>
+<td>Great Lakes, St Lawrence, Gulf of St. Lawrence</td>
+<td>10km (atmosphere, land, soil). 1km (marine ice, rivers)</td>
+<td>(??)</td>
+<td><a href="https://eccc-msc.github.io/open-data/msc-data/readme_en/">MSC Open Data</a> (GeoMet and Datamart)</td>
+</tr>
+<tr>
+<td>Hydrologic Prediction</td>
+<td>(??)</td>
+<td>Regional Deterministic Prediction System – Coupled to  Gulf of St Lawrence (RDPS-CGSL), <a href="https://collaboration.cmc.ec.gc.ca/cmc/CMOI/product_guide/docs/lib/technote_rdps-cgsl_e.pdf">Tech doc</a></td>
+<td>1D rivers, one member</td>
+<td>map (??)</td>
+<td>1km</td>
+<td>(??)</td>
+<td><a href="https://eccc-msc.github.io/open-data/msc-data/readme_en/">MSC Open Data</a> (GeoMet and Datamart)</td>
+</tr>
+<tr>
+<td>Hydrologic Prediction</td>
+<td>Land Surface</td>
+<td>Canadian Land Data Assimilation System (CaLDAS) in NSRPS, <a href="https://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/docs/fact_sheets/factsheet_caldas-nsrps-310_e.pdf">Fact Sheet</a>, <a href="https://collaboration.cmc.ec.gc.ca/cmc/CMOI/product_guide/docs/tech_notes/technote_caldas-nsrps_e.pdf">Tech doc</a></td>
+<td>Produces land surface analyses for numerical weather predictions. Includes snow pack.</td>
+<td><a href="https://eccc-msc.github.io/open-data/msc-data/nwp_caldas-nsrps/readme_caldas-nsrps-datamart_en/">Canada and Northern US</a></td>
+<td>2.5km</td>
+<td>4x per day</td>
+<td><a href="https://eccc-msc.github.io/open-data/msc-data/nwp_caldas-nsrps/readme_caldas-nsrps-datamart_en/">MSC Testing Data Repository</a></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Atmosphere</td>
+<td>Precipitation Analysis</td>
+<td>Regional Deterministic Precipitation Analysis (RDPA)</td>
+<td>Best estimate of the amount of precipitation. Preliminary estimate is available approximately 1h after the end of the accumulation period, and revised 6h after</td>
+<td>Canada, US, Mexico</td>
+<td>10km, surface level</td>
+<td>4x per day.  6h intervals and once a day for the 24h interval</td>
+<td><a href="https://eccc-msc.github.io/open-data/msc-data/readme_en/">MSC Open Data</a> (GeoMet and Datamart)</td>
+</tr>
+<tr>
+<td>Atmosphere</td>
+<td>Precipitation Analysis</td>
+<td>High Resolution Deterministic Precipitation Analysis (CaPA-HRDPA)</td>
+<td>Best estimate of 6 and 24 hour precipitation amounts</td>
+<td>Most of Canada and part of US (see map)</td>
+<td>10km</td>
+<td>12 analyses per day. Four analyses of 6 hour amounts per day, valid at synoptic hours (00, 06, 12 and 18 UTC) and two 24 hour analyses valid at 06 and 12 UTC</td>
+<td><a href="https://eccc-msc.github.io/open-data/msc-data/readme_en/">MSC Open Data</a> (GeoMet and Datamart), Archived Info: <a href="https://caspar-data.ca/">CaSPAr</a></td>
+</tr>
+<tr>
+<td>Atmosphere</td>
+<td>Precipitation Analysis</td>
+<td>High Resolution Ensemble Precipitation Analysis (CaPA-HREPA)</td>
+<td>Ensemble version of CaPA-HRDPA, 25 members.  Optimal precipitation estimate over 6 and 24 hour accumulation periods</td>
+<td>Most of Canada and part of US (see map)</td>
+<td>2.5km</td>
+<td>Two deterministic configurations of the analysis produce four 6-hour cumulative analyses valid at synoptic times (00, 06, 12, and 18 UTC) and two 24-hour analyses valid at 06 and 12 UTC</td>
+<td>MSC testing data repository DD-Alpha</td>
+</tr>
+<tr>
+<td>Atmosphere</td>
+<td>Precipitation Analysis</td>
+<td>High Resolution Deterministic Precipitation Analysis watershed</td>
+<td>Average watershed precipitation. Best estimate of 6 and 24hr precipitation amounts</td>
+<td>Most of Canada and part of US (see map)</td>
+<td>2.5km</td>
+<td>10 analyses per day. Four analyses of 6 hour amounts per day, valid at synoptic hours (00, 06, 12 and 18 UTC) and one 24 hour analysis valid at 12 UTC</td>
+<td><a href="https://eccc-msc.github.io/open-data/msc-data/readme_en/">MSC Open Data</a> (GeoMet and Datamart)</td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Atmosphere</td>
+<td>Deterministic</td>
+<td>Global Deterministic Prediction System (GDPS)</td>
+<td>Temperature, precipitation, cloud cover, wind speed and direction, and humidity</td>
+<td>Global</td>
+<td>15km, 33 vertical levels</td>
+<td>2x per day, 10 days into the future</td>
+<td><a href="https://eccc-msc.github.io/open-data/msc-data/readme_en/">MSC Open Data</a> (GeoMet and Datamart), Archived Info: <a href="https://caspar-data.ca/">CaSPAr</a></td>
+</tr>
+<tr>
+<td>Atmosphere</td>
+<td>Deterministic</td>
+<td>Regional Deterministic Prediction System (RDPS)</td>
+<td>Temperature, precipitation, cloud cover, wind speed and direction, and humidity</td>
+<td>Canada and US</td>
+<td>10km, 33 vertical levels</td>
+<td>4x per day, 84 hrs into the future</td>
+<td><a href="https://eccc-msc.github.io/open-data/msc-data/readme_en/">MSC Open Data</a> (GeoMet and Datamart), Archived Info: <a href="https://caspar-data.ca/">CaSPAr</a></td>
+</tr>
+<tr>
+<td>Atmosphere</td>
+<td>Deterministic</td>
+<td>High Resolution Deterministic Prediction System (HRDPS)</td>
+<td>Temperature, precipitation, cloud cover, wind speed and direction, humidity and others</td>
+<td>Most of Canada</td>
+<td>2.5km, 31 vertical levels</td>
+<td>4x per day, 48 hrs into the future</td>
+<td><a href="https://eccc-msc.github.io/open-data/msc-data/readme_en/">MSC Open Data</a> (GeoMet and Datamart), Archived Info: <a href="https://caspar-data.ca/">CaSPAr</a></td>
+</tr>
+<tr>
+<td>Atmosphere</td>
+<td>Ensemble</td>
+<td>Global Ensemble Prediction System (GEPS)</td>
+<td>Probabilistic. Temperature, precipitation, cloud cover, wind speed and direction, humidity and others. Ensemble of 20 scenarios.</td>
+<td>Global</td>
+<td>.35 degree, 84 vertical levels</td>
+<td>(??), 16 days into the future, 1x per week for forecast of 32 days into the future</td>
+<td><a href="https://eccc-msc.github.io/open-data/msc-data/readme_en/">MSC Open Data</a> (GeoMet and Datamart), Archived Info: <a href="https://caspar-data.ca/">CaSPAr</a></td>
+</tr>
+<tr>
+<td>Atmosphere</td>
+<td>Ensemble</td>
+<td>North American Ensemble Forecast System (GEPS – NAEFS)</td>
+<td>Combined ensemble forecasts, seamless across national boundaries</td>
+<td>Canada, US, Mexico</td>
+<td>(??)</td>
+<td>1 to 14 days into the future</td>
+<td><a href="https://eccc-msc.github.io/open-data/msc-data/readme_en/">MSC Open Data</a></td>
+</tr>
+<tr>
+<td>Atmosphere</td>
+<td>Ensemble</td>
+<td>Regional Ensemble Prediction System (REPS)</td>
+<td>Probabilistic predictions of temperature, precipitation, cloud cover, wind speed and direction, humidity and others. 20 ensemble members</td>
+<td>Canada and US</td>
+<td>15km and 10km, 24 vertical levels</td>
+<td>4x per day, 3 days into the future</td>
+<td><a href="https://eccc-msc.github.io/open-data/msc-data/readme_en/">MSC Open Data</a> (GeoMet and Datamart), Archived Info: <a href="https://caspar-data.ca/">CaSPAr</a></td>
+</tr>
+<tr>
+<td>Atmosphere</td>
+<td>Seasonal</td>
+<td>Canadian Seasonal to Inter-annual Prediction System (CanSIPS)</td>
+<td>Probabilistic predictions of temperature, precipitation, wind speed and direction and others</td>
+<td>Global</td>
+<td>2.5 and 1.0 degrees and for a few selected vertical levels.</td>
+<td>Monthly.  Predictions up to 12 months into the future</td>
+<td><a href="https://eccc-msc.github.io/open-data/msc-data/readme_en/">MSC Open Data</a> (GeoMet and Datamart)</td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Other Products</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Other</td>
+<td>Reanalysis</td>
+<td>Regional Deterministic Reanalysis System (RDRS)</td>
+<td>40+ year reanalysis</td>
+<td></td>
+<td></td>
+<td></td>
+<td><a href="https://github.com/julemai/CaSPAr/wiki/Available-products">CaSPAr</a></td>
+</tr>
+<tr>
+<td>Other</td>
+<td>Station Database</td>
+<td>Canadian historical Snow Water Equivalent dataset (CanSWE)</td>
+<td>Database of snow observations</td>
+<td>Canada (see map)</td>
+<td>Observation stations</td>
+<td>Updated annually</td>
+<td><a href="https://zenodo.org/record/4734372#.Y8WxHJjMKUk">Publication and Data</a></td>
+</tr>
+<tr>
+<td>Other</td>
+<td>Station Data</td>
+<td>Adjusted and Homogenized Canadian Climate Data (AHCCD)</td>
+<td>Adjusted and homogenized air temperature, rainfall, snowfall, total precipitation, wind speed and atmospheric pressure (see more info)</td>
+<td>Canada</td>
+<td>Between 330 and 630 locations</td>
+<td>Annual, seasonal, monthly, daily and hourly dependent on variable of interest (see more info) 1900-01-01 to 2012-12-31</td>
+<td><a href="https://eccc-msc.github.io/open-data/msc-data/readme_en/">MSC Open Data</a> (GeoMet and Datamart)</td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
 <p><p> 
 <b> Click  <a href="../about" > here </a> to learn more about CMC and the NHS Practitioners guide. </b>
 </p></p>
@@ -195,7 +531,7 @@
 					</ul>
 					</li>
 					<li class="">
-						<a href="../coming-soon/" class="nav-link">Data Usage and Tutorials</a>
+						<a href="../tutorials/" class="nav-link">Data Usage and Tutorials</a>
 					</li>
 					<li class="">
 					<span class="opener">Additional Information</span>
@@ -211,11 +547,11 @@
 		<!-- contact section  -->
 		<section>
 			<header class="major">
-				<h2>Contact information</h2>
+				<!-- <h2>Contact information</h2> -->
 			</header>
-			<p>contact description</p>
+			<!-- <p>contact description</p> -->
 			<ul class="contact">
-				<li class="icon solid fa-envelope"><a href="#"> email< /a></li>
+				<!-- <li class="icon solid fa-envelope"><a href="#"> email< /a></li> -->
 			</ul>
 		</section>
 		<!-- Footer -->
