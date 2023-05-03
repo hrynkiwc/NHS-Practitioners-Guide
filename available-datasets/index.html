@@ -72,7 +72,7 @@
 <tr>
 <td>Hydrologic Prediction</td>
 <td><a href="./../products/DHPS/DHPS-3.1.0"> Deterministic Hydrologic Prediction System (DHPS), <a href="https://collaboration.cmc.ec.gc.ca/cmc/CMOI/product_guide/docs/tech_notes/technote_dhps-310_20211130_e.pdf">Tech note</a></td>
-<td>1D streamflow, lake levels</td>
+<td>1D streamflow, lake levels. Component of NSRPS</td>
 <td>6 major Canadian river basins and large water bodies, expanding in 2023</td>
 <td>1km</td>
 <td>Frequency: 00 and 12Z, 6 day forecast, Hourly Output</td>
@@ -81,7 +81,7 @@
 <tr>
 <td>Hydrologic Prediction</td>
 <td>Ensemble Hydrological Prediction System (EHPS), <a href="https://collaboration.cmc.ec.gc.ca/cmc/CMOI/product_guide/docs/tech_notes/technote_ehps_e.pdf">Tech note</a></td>
-<td>1D Rivers, 20 members</td>
+<td>1D Rivers, 20 members. Component of NSRPS.</td>
 <td>Great Lakes, St Lawrence, Nelson and Churchill, expanding in 2023</td>
 <td>1km</td>
 <td>Once per day (16 day forecast), Thursdays (32 day forecast)</td>
@@ -90,7 +90,7 @@
 <tr>
 <td>Hydrologic Prediction</td>
 <td>Simulation Hydrodynamique OPérationnelle (SHOP), <a href="https://collaboration.cmc.ec.gc.ca/cmc/CMOI/product_guide/docs/tech_notes/technote_shop_e.pdf">Tech note</a></td>
-<td>Water level and velocity. One member</td>
+<td>Water level and velocity. One member. Component of NSRPS.</td>
 <td>St. Lawrence</td>
 <td>&lt;200m</td>
 <td>Frequency 6h, 48h forecast, 6h analysis, 3 minute time step</td>
@@ -99,11 +99,20 @@
 <tr>
 <td>Hydrologic Prediction</td>
 <td><a href="./../products/HRDLPS/HRDLPS-2.0"> High Resolution Deterministic Prediction System (HRDLPS)</td>
-<td>Surface, near surface, input fields for hydro systems. Forecasts of soil moisture, snow, temp, humidity, wind</td>
+<td>Surface, near surface, input fields for hydro systems. Forecasts of soil moisture, snow, temp, humidity, wind. Component of NSRPS.</td>
 <td>Canada</td>
 <td>2.5km</td>
 <td>Frequency: 00 and 12Z, Medium Range, 6 day forecast</td>
 <td><a href="https://dd.alpha.weather.gc.ca/model_hrdlps/">Datamart Alpha (Testing Repository)</a></td>
+</tr>
+<tr>
+<td>Hydrologic Prediction</td>
+<td>High Resolution Ensemble Prediction System (HRELPS)</td>
+<td>Ensemble version of HRDLPS. Produces 21 hourly forecast members during each run. Component of NSRPS.</td>
+<td>Canada</td>
+<td>2.5km</td>
+<td>Frequency: Once per day for forecasts with lead times of up to 16 days. Once per week on Thursdays for 32 day forecast.</td>
+<td>In progress</td>
 </tr>
 <tr>
 <td>Hydrologic Prediction</td>
@@ -120,13 +129,13 @@
 <td>1D rivers, one member</td>
 <td>Gulf of St. Lawrence</td>
 <td>1km</td>
-<td>four times a day for 00z, 06z, 12z and 18z initialization times for a forecast horizon of 48 hours</td>
+<td>Four times a day for 00z, 06z, 12z and 18z initialization times for a forecast horizon of 48 hours</td>
 <td><a href="https://eccc-msc.github.io/open-data/msc-data/readme_en/">MSC Open Data</a> (GeoMet and Datamart)</td>
 </tr>
 <tr>
 <td>Hydrologic Prediction</td>
-<td>Canadian Land Data Assimilation System (CaLDAS) in NSRPS, <a href="https://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/docs/fact_sheets/factsheet_caldas-nsrps-310_e.pdf">Fact Sheet</a>, <a href="https://collaboration.cmc.ec.gc.ca/cmc/CMOI/product_guide/docs/tech_notes/technote_caldas-nsrps_e.pdf">Tech note</a></td>
-<td>Produces land surface analyses for numerical weather predictions. Includes snow pack.</td>
+<td>Canadian Land Data Assimilation System (CaLDAS) <a href="https://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/docs/fact_sheets/factsheet_caldas-nsrps-310_e.pdf">Fact Sheet</a>, <a href="https://collaboration.cmc.ec.gc.ca/cmc/CMOI/product_guide/docs/tech_notes/technote_caldas-nsrps_e.pdf">Tech note</a></td>
+<td>Produces land surface analyses for numerical weather predictions. Includes snow pack. Component of NSRPS.</td>
 <td><a href="https://eccc-msc.github.io/open-data/msc-data/nwp_caldas-nsrps/readme_caldas-nsrps-datamart_en/">Canada and Northern US</a></td>
 <td>2.5km</td>
 <td>Four times per day</td>
@@ -164,14 +173,14 @@
 <td>High Resolution Deterministic Precipitation Analysis (CaPA-HRDPA) <a href="https://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/docs/lib/technote_capa_hrdpa_e.pdf">Tech note</a></td>
 <td>Best estimate of 6 and 24 hour precipitation amounts. <a href="./../products/CAPA/domain-images/CaPA_flavours_NG.pdf"> CaPA diagram</td>
 <td>Most of Canada and part of US</td>
-<td>10km</td>
+<td>2.5km</td>
 <td>Four 6-hour precipitation accumulation analyses valid at synoptic hours (00, 06, 12 and 18Z) and two 24-hour analyses valid at 06 and 12Z. A preliminary analysis is produced 1 hour after the time of validity and a final analysis is generated 7 hours later, for a total of 12 analyses per day</td>
 <td><a href="https://eccc-msc.github.io/open-data/msc-data/readme_en/">MSC Open Data</a> (GeoMet and Datamart), Archived Info: <a href="https://caspar-data.ca/">CaSPAr</a></td>
 </tr>
 <tr>
 <td>Atmosphere</td>
 <td>High Resolution Ensemble Precipitation Analysis (CaPA-HREPA) <a href="https://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/docs/lib/technote_capa_hrepa_e.pdf">Tech note</a></td>
-<td>Ensemble version of CaPA-HRDPA, 25 members.  Optimal precipitation estimate over 6 and 24 hour accumulation periods. <a href="./../products/CAPA/domain-images/CaPA_flavours_NG.pdf"> CaPA diagram</td>
+<td>Ensemble version of CaPA-HRDPA, 25 members.  Optimal precipitation estimate over 6 and 24 hour accumulation periods. Component of NSRPS. <a href="./../products/CAPA/domain-images/CaPA_flavours_NG.pdf"> CaPA diagram</td>
 <td>Most of Canada and part of US</td>
 <td>2.5km</td>
 <td>Two deterministic configurations of the analysis produce four 6-hour cumulative analyses valid at synoptic times (00, 06, 12, and 18 UTC) and two 24-hour analyses valid at 06 and 12 UTC</td>
@@ -402,7 +411,7 @@
 		<h3>Tutorials</h3>
 		<p> Discover tutorials and ways to use data</p>
 		<ul class="actions">
-			<li><a href="https://github.com/NHS-Dev/nhs-tutorials"  , class="button">Learn more</a></li>
+			<li><a href="https://github.com/NHS-Dev"  , class="button">Learn more</a></li>
 		</ul>
 	</article>
 	<article>
